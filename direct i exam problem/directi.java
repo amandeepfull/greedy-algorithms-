@@ -39,15 +39,19 @@ for(int i=0;i<k;i++)
 			int price=hm.get(val);
 		//System.out.println("b "+price);
 		
-		result=result+val;
-			budget=budget-price;
-			
-			price=p[l-1];
+		
 			 
 			
-		if(budget<price)
+		if(budget<price || budget==0)
 		{
 			break;
+		}
+		else
+		{
+			result=result+val;
+			budget=budget-price;
+			
+		
 		}
 		
 	}
